@@ -1,8 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.css'; // Ensure Tailwind and other global styles are here
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+// If you want Firebase or other global initialization, ensure it's done here
+// For example, importing Firebase initialization:
+// import './firebase'; // Ensure this is done in a separate firebase config file if needed
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,7 +15,5 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Measure performance (optional)
 reportWebVitals();
