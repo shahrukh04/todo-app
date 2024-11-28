@@ -15,10 +15,18 @@ function TaskList({ tasks, onDeleteTask, onToggleComplete }) {
           }`}
         >
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
-            <div>
+            {/* Task Text and Category */}
+            <div className="flex flex-col">
               <h3 className="text-lg sm:text-xl font-semibold text-gray-800">{task.text}</h3>
               <p className="text-sm text-gray-500 italic">{task.category}</p>
+              {task.dueDate && (
+                <p className="text-sm text-gray-600">
+                  <strong>Due Date:</strong> {new Date(task.dueDate).toLocaleDateString()}
+                </p>
+              )}
             </div>
+
+            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
               <button
                 onClick={() => onToggleComplete(task.id)}
