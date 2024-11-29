@@ -42,7 +42,7 @@ function TaskList({ tasks, onDeleteTask, onToggleComplete }) {
         <select
           value={filterCategory}
           onChange={(e) => setFilterCategory(e.target.value)}
-          className="w-full sm:w-1/4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+          className=" w-full sm:w-1/4 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
         >
           <option value="All">All Categories</option>
           <option value="General">General</option>

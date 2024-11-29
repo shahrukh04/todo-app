@@ -2,7 +2,7 @@ import React from "react";
 
 function FilterPanel({ onFilterChange }) {
   return (
-    <div className="flex flex-wrap gap-4 mb-4">
+    <div className="flex flex-wrap gap-4 mt-4 mb-4 ">
       <select
         onChange={(e) => onFilterChange("category", e.target.value)}
         className="border px-4 py-2 rounded w-full sm:w-auto"

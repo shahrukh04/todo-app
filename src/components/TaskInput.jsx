@@ -92,7 +92,7 @@ function TaskInput({ onAddTask }) {
         </div>
 
         {/* Priority Dropdown */}
-        <div style={{ marginBottom: "15px" }}>
+        <div style={{ marginBottom: "15px"}}>
           <label htmlFor="priority" style={{ fontSize: "16px", fontWeight: "600" }}>
             Priority
           </label>
