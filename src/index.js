@@ -1,19 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css'; // Ensure Tailwind and other global styles are here
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+// import "globalthis/auto"; // Ensure globalThis polyfill is loaded first
 
-// If you want Firebase or other global initialization, ensure it's done here
-// For example, importing Firebase initialization:
-// import './firebase'; // Ensure this is done in a separate firebase config file if needed
+import "./index.css"; // Tailwind CSS and other global styles
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+// import { ChakraProvider } from "@chakra-ui/react"; // Import ChakraProvider for Chakra UI
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// If you use Firebase or other global initializations, import them here
+// Example: Firebase initialization
+// import './firebase'; // Ensure this is configured in a separate file if required
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Wrapping the application with ChakraProvider for Chakra UI styling */}
+      <App />
   </React.StrictMode>
 );
 
-// Measure performance (optional)
+// Optional: Measure app performance (analytics, etc.)
 reportWebVitals();
